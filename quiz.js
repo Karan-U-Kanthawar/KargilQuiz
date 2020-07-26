@@ -38,22 +38,17 @@ quizMain.addEventListener('submit', (event) => {
   displayScore.classList.add('show');
 
   const question1Children = document.querySelector('.question1').childNodes;
-  console.log(question1Children);
   question1Children[7].classList.add('correct');
 
   const question2Children = document.querySelector('.question2').childNodes;
-  console.log(question2Children);
   question2Children[9].classList.add('correct');
 
   const question3Children = document.querySelector('.question3').childNodes;
-  console.log(question3Children);
-  question3Children[11].classList.add('correct');
+   question3Children[11].classList.add('correct');
 
   const question4Children = document.querySelector('.question4').childNodes;
-  console.log(question4Children);
   question4Children[7].classList.add('correct');
 
   const question5Children = document.querySelector('.question5').childNodes;
-  console.log(question5Children);
   question5Children[13].classList.add('correct');
 });
