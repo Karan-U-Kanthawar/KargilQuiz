@@ -28,7 +28,7 @@ quizMain.addEventListener('submit', (event) => {
     timeOut += 1;
     displayScore.innerHTML = `${
       score * 20
-    }%&nbsp(You got &nbsp<strong>${score}</strong> &nbsp out of 5 correct.)`;
+    }%&nbsp(You got &nbsp ${score} &nbsp out of 5 correct.)`;
     if (timeOut === score) {
       clearInterval(timer);
     }
