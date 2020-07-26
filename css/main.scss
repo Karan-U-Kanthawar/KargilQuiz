@@ -1,0 +1,91 @@
+$colors: (
+  primary: #005dff,
+  secondary: #ffffff,
+);
+$mainPadding: 1rem;
+$mainMargin: 1rem;
+@function color($colorName) {
+  @return map-get($colors, $colorName);
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: color(primary);
+}
+body {
+  .container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .quizHeader {
+    padding: $mainPadding;
+    margin: $mainMargin;
+    background-color: darken(color(secondary), 10%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    font-weight: 900;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5em;
+  }
+}
+.quizForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .question1,
+  .question2,
+  .question3,
+  .question4,
+  .question5 {
+    font-size: 1.5rem;
+    padding: $mainPadding;
+    margin: $mainMargin;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background-color: lighten(color(primary), 18%);
+    .q1,
+    .q2,
+    .q3,
+    .q4,
+    .q5 {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.submitBtn {
+  margin: $mainMargin * 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .btn {
+    padding: $mainPadding;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+  }
+}
+
+.show {
+  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: $mainPadding;
+  margin: $mainMargin;
+  background-color: color(secondary);
+}
+
+.wrong {
+  border: 2px solid red;
+}
+.correct {
+  border: 2px solid green;
+}

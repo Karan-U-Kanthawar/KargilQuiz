@@ -1,0 +1,125 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #005dff;
+}
+
+body .container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+body .quizHeader {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #e6e6e6;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  font-weight: 900;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5em;
+}
+
+.quizForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.quizForm .question1,
+.quizForm .question2,
+.quizForm .question3,
+.quizForm .question4,
+.quizForm .question5 {
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  background-color: #5c97ff;
+}
+
+.quizForm .question1 .q1,
+.quizForm .question1 .q2,
+.quizForm .question1 .q3,
+.quizForm .question1 .q4,
+.quizForm .question1 .q5,
+.quizForm .question2 .q1,
+.quizForm .question2 .q2,
+.quizForm .question2 .q3,
+.quizForm .question2 .q4,
+.quizForm .question2 .q5,
+.quizForm .question3 .q1,
+.quizForm .question3 .q2,
+.quizForm .question3 .q3,
+.quizForm .question3 .q4,
+.quizForm .question3 .q5,
+.quizForm .question4 .q1,
+.quizForm .question4 .q2,
+.quizForm .question4 .q3,
+.quizForm .question4 .q4,
+.quizForm .question4 .q5,
+.quizForm .question5 .q1,
+.quizForm .question5 .q2,
+.quizForm .question5 .q3,
+.quizForm .question5 .q4,
+.quizForm .question5 .q5 {
+  margin-bottom: 5px;
+}
+
+.submitBtn {
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.submitBtn .btn {
+  padding: 1rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+
+.show {
+  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #ffffff;
+}
+
+.wrong {
+  border: 2px solid red;
+}
+
+.correct {
+  border: 2px solid green;
+}
+/*# sourceMappingURL=main.css.map */
